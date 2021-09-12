@@ -1,37 +1,39 @@
-import logo from './BM-logo.png';
+import logo from './images/BM-logo.png';
 import './App.css';
+import { useState } from 'react';
+import handWave from './images/hand-wave.png';
 
 function App() {
+  const [getUserName, setUserName] = useState("")
+
   return (
     <div className="App">
       <header className="App-header">
         <div className="App-header-inner container">
           <div className="App-header-inner-left">
             <a href="/" target="_self">
-              <img src={logo} className="App-header-logo" alt="BM-Logo" href="https://google.co.uk"/>
+              <img src={logo} className="App-header-inner-left-logo" alt="BM-Logo"/>
             </a>
-            <p>Hi there <span>Berkan</span>!</p>
           </div>
           <div className="App-header-inner-right">
-            <p>Me</p>
-            <p>Blah Blah</p>
-            <p>Contact me</p>
+            <div className="App-header-inner-right-inner">
+              {getUserName.length > 0 && <p className="App-header-inner-right-inner-text">Hi <span>{getUserName}</span>!</p>}
+              {getUserName.length > 0 && <img src={handWave} className="App-header-inner-right-inner-handWave" alt="Hand wave"></img>}
+            </div>
           </div>
         </div>
       </header>
       
       <main className="App-main container">
-        <input id="user-name-inputText" type="text" name="userName" size="25" maxLength="25" placeholder="Enter name!" autoFocus={true}></input>
-        <button id="user-name-button" type="button" name="UNKNOWN" value="UNKNOWN2">Find out about Berkan!</button>
+        <input id="App-main-user-inputText" type="text" name="userName" size="25" maxLength="25" placeholder="Enter name!" autoFocus={true}></input>
+        <button id="App-main-user-button" type="button" name="UNKNOWN" value="UNKNOWN2" onClick={(e) => setUserName(document.getElementById("App-main-user-inputText").value)}>Find out about Berkan!</button>
         <hr></hr>
         <hr></hr>
         <hr></hr>
         <hr></hr>
         <hr></hr>
       </main>
-      <footer>
-
-      </footer>
+      {/* <footer></footer> */}
     </div>
   );
 }
