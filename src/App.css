@@ -1,5 +1,43 @@
+#user-name-inputText {
+  padding: 5px 10px;
+  margin: 5px 0px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  outline: none; /*removes the blue outline around input when it gets focussed on */
+  text-align: center;
+  cursor: pointer;
+}
+
+#user-name-inputText:focus {
+  border-color: cyan;
+  font-weight: 600;
+}
+
+#user-name-button {
+  padding: 5px 10px;
+  margin: 5px 0px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  transition-duration: 0.5s;
+}
+
+#user-name-button:hover {
+  background-color: cyan;
+  border-color: cyan;
+}
+
+
+
 .App {
   text-align: center;
+  cursor: pointer;
 }
 
 .App-logo {
@@ -9,14 +47,13 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 10s linear;
+    animation: App-logo-spin infinite 10s linear 0.2s;
   }
 }
 
 .App-header {
-  /* background-color: #282c34; */
   background-color: #000000;
-  
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,10 +61,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 /* @keyframes App-logo-spin {
@@ -44,13 +77,13 @@
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(35deg);
+    transform: rotate(25deg);
   }
   50% {
     transform: rotate(0deg);
   }
   75% {
-    transform: rotate(-35deg);
+    transform: rotate(-25deg);
   }
   100% {
     transform: rotate(0deg);

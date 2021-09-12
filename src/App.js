@@ -6,17 +6,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <input id="user-name-inputText" type="text" name="userName" size="25" maxLength="25" placeholder="Enter name!" autoFocus={true}></input>
+        <button id="user-name-button" type="button" name="UNKNOWN" value="UNKNOWN2">Find out about Berkan!</button>
       </header>
     </div>
   );
