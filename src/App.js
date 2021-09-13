@@ -17,7 +17,7 @@ function App() {
           </div>
           <div className="App-header-inner-right">
             <div className="App-header-inner-right-inner">
-              {getUserName.length > 0 && <p className="App-header-inner-right-inner-text">Hi <span>{getUserName}</span>!</p>}
+              {getUserName.length > 0 && <p className="App-header-inner-right-inner-text">Hi <span className="App-header-inner-right-inner-text-display">{getUserName}</span>!</p>}
               {getUserName.length > 0 && <img src={handWave} className="App-header-inner-right-inner-handWave" alt="Hand wave"></img>}
             </div>
           </div>

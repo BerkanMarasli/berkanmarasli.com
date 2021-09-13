@@ -1,4 +1,4 @@
-#user-name-inputText {
+#App-main-user-inputText {
   padding: 5px 10px;
   margin: 5px 0px;
   border: 2px solid white;
@@ -10,12 +10,12 @@
   cursor: pointer;
 }
 
-#user-name-inputText:focus {
-  border-color: cyan;
+#App-main-user-inputText:focus {
+  border-color: rgb(97, 171, 221);
   font-weight: 600;
 }
 
-#user-name-button {
+#App-main-user-button {
   padding: 5px 10px;
   margin: 5px 0px;
   border: 2px solid white;
@@ -28,13 +28,17 @@
   transition-duration: 0.5s;
 }
 
-#user-name-button:hover {
-  background-color: cyan;
-  border-color: cyan;
+#App-main-user-button:hover {
+  background-color: rgb(97, 171, 221);
+  border-color: rgb(97, 171, 221);
 }
 
 p {
   color:white;
+}
+
+.App-header-inner-right-inner-text-display {
+  color:rgb(97, 171, 221);
 }
 
 .App-header-inner-left-logo,
@@ -102,10 +106,12 @@ p {
   /* align-items: center; */
   /* justify-content: center; */
 
-  /* min-height: 100vh; */
+  min-height: 100vh;
 
   cursor: pointer;
   background-color: black;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .App-main {
