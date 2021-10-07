@@ -1,6 +1,7 @@
 import "./Header.css";
 import logo from "../images/BM-logo.png";
 import handWave from "../images/hand-wave.png";
+import TypeIt from "typeit-react"; // https://typeitjs.com/docs/react
 
 function Header(props) {
   const { getUserName } = props.user;
@@ -28,15 +29,7 @@ function AppHeaderinnerright(getUserName) {
   return (
     <div className="App-header-inner-right">
       <div className="App-header-inner-right-inner">
-        {getUserName.length > 0 && (
-          <p className="App-header-inner-right-inner-text">
-            Hi{" "}
-            <span className="App-header-inner-right-inner-text-display">
-              {getUserName}
-            </span>
-            !
-          </p>
-        )}
+        {getUserName.length > 0 && typeItUserName(getUserName)}
         {getUserName.length > 0 && (
           <img
             src={handWave}
@@ -45,6 +38,14 @@ function AppHeaderinnerright(getUserName) {
           ></img>
         )}
       </div>
+    </div>
+  );
+}
+
+function typeItUserName(getUserName) {
+  return (
+    <div className="App-header-inner-right-inner-text">
+      <TypeIt>Hi {getUserName}!</TypeIt>
     </div>
   );
 }
