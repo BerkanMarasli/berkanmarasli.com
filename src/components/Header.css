@@ -1,0 +1,92 @@
+#App-main-user-inputText {
+  padding: 5px 10px;
+  margin: 5px 0px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  outline: none; /*removes the blue outline around input when it gets focussed on */
+  text-align: center;
+  cursor: pointer;
+}
+
+#App-main-user-inputText:focus {
+  border-color: rgb(97, 171, 221);
+  font-weight: 600;
+}
+
+#App-main-user-button {
+  padding: 5px 10px;
+  margin: 5px 0px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  transition-duration: 0.5s;
+}
+
+#App-main-user-button:hover {
+  background-color: rgb(97, 171, 221);
+  border-color: rgb(97, 171, 221);
+}
+
+p {
+  color: white;
+}
+
+.App-header-inner-right-inner-text-display {
+  color: rgb(97, 171, 221);
+}
+
+.App-header-inner-left-logo,
+.App-header-inner-right-inner-handWave {
+  height: 8vh;
+  max-height: 66px;
+  /* background-color: #ffffff; */
+}
+
+.App-header-inner-right-inner-handWave {
+  animation: App-header-inner-right-inner-handWave-movement infinite 5s linear
+    0.1s;
+}
+
+.App-header {
+  flex: none;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.App-header-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-header-inner-right-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-header-inner-right-inner-text {
+  margin-right: 10px;
+}
+
+.App-header-inner-left {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+.App-header-inner-right {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; */
+}
