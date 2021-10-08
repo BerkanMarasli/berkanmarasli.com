@@ -1,11 +1,12 @@
 import "./Main.css";
 import { useState } from "react";
+import Content from "./Content";
 import logo from "../images/BM-logo.png";
 import handWave from "../images/hand-wave.png";
 import TypeIt from "typeit-react"; // https://typeitjs.com/docs/react
 
 function Main(props) {
-  const { setDisplayMainPage } = props.functions;
+  const { displayMainPage, setDisplayMainPage } = props.functions;
   const [getUserName, setUserName] = useState("");
   const [displaySetUserName, setDisplaySetUserName] = useState(true);
 
@@ -18,7 +19,8 @@ function Main(props) {
             setDisplayMainPage
           )
         : null}
-      {displayUserNameComponent(getUserName)}
+      {displayMainPage ? displayUserNameComponent(getUserName) : null}
+      {displayMainPage ? <Content /> : null}
     </main>
   );
 }

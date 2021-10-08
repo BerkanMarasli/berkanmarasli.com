@@ -1,0 +1,35 @@
+.App-Main-Content-Techstack-logo {
+  width: 100px;
+  height: 100px;
+  margin: 0px 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15%;
+}
+
+.App-Main-Content-Techstack-logo:hover {
+  border: 10px solid red;
+}
+
+.slider-track {
+  display: flex;
+  align-content: center;
+  animation: scroll 50s linear infinite;
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(-160px * 12));
+  }
+}
+
+.slider {
+  overflow: hidden;
+}

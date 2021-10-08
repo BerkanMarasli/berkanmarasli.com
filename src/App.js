@@ -15,6 +15,7 @@ function App() {
       />
       <Main
         functions={{
+          displayMainPage: displayMainPage,
           setDisplayMainPage: setDisplayMainPage,
         }}
       />
