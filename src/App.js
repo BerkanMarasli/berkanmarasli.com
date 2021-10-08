@@ -4,12 +4,20 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 
 function App() {
-  const [getUserName, setUserName] = useState("");
+  const [displayMainPage, setDisplayMainPage] = useState(false);
 
   return (
     <div className="App">
-      <Header user={{ getUserName: getUserName }} />
-      <Main user={{ setUserName: setUserName }} />
+      <Header
+        functions={{
+          displayMainPage: displayMainPage,
+        }}
+      />
+      <Main
+        functions={{
+          setDisplayMainPage: setDisplayMainPage,
+        }}
+      />
       {/* <footer></footer> */}
     </div>
   );

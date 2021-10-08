@@ -26,9 +26,17 @@
 .App-main {
   width: 100%;
   height: 100%;
+}
+
+.App-main-setUserName {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#App-main-setUserName-logo {
+  width: 25%;
+  height: 25%;
 }
 
 #App-main-user-inputText {
