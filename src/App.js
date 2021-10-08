@@ -1,10 +1,10 @@
-import "./App.css";
-import { useState } from "react";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import "./App.css"
+import { useState } from "react"
+import Header from "./components/Header"
+import Main from "./components/Main"
 
 function App() {
-  const [displayMainPage, setDisplayMainPage] = useState(false);
+  const [displayMainPage, setDisplayMainPage] = useState(false)
 
   return (
     <div className="App">
@@ -15,13 +15,12 @@ function App() {
       />
       <Main
         functions={{
-          displayMainPage: displayMainPage,
           setDisplayMainPage: setDisplayMainPage,
         }}
       />
       {/* <footer></footer> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

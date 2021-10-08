@@ -1,14 +1,16 @@
-import "./Main.css";
-import { useState } from "react";
-import Content from "./Content";
-import logo from "../images/BM-logo.png";
-import handWave from "../images/hand-wave.png";
-import TypeIt from "typeit-react"; // https://typeitjs.com/docs/react
+import "./Main.css"
+import { useState } from "react"
+import Content from "./Content"
+import logo from "../images/BM-logo.png"
+import handWave from "../images/hand-wave.png"
+import TypeIt from "typeit-react" // https://typeitjs.com/docs/react
 
 function Main(props) {
-  const { displayMainPage, setDisplayMainPage } = props.functions;
-  const [getUserName, setUserName] = useState("");
-  const [displaySetUserName, setDisplaySetUserName] = useState(true);
+  const { setDisplayMainPage } = props.functions
+  const [getUserName, setUserName] = useState("")
+  const [displaySetUserName, setDisplaySetUserName] = useState(true)
+  const [displayUserName, setDisplayUserName] = useState(false)
+  const [displayContent, setDisplayContent] = useState(false)
 
   return (
     <main className="App-Main container">
@@ -16,19 +18,23 @@ function Main(props) {
         ? displaySetUserNameComponent(
             setUserName,
             setDisplaySetUserName,
-            setDisplayMainPage
+            setDisplayMainPage,
+            setDisplayUserName
           )
         : null}
-      {displayMainPage ? displayUserNameComponent(getUserName) : null}
-      {displayMainPage ? <Content /> : null}
+      {displayUserName
+        ? displayUserNameComponent(getUserName, setDisplayUserName, setDisplayContent)
+        : null}
+      {displayContent ? <Content /> : null}
     </main>
-  );
+  )
 }
 
 function displaySetUserNameComponent(
   setUserName,
   setDisplaySetUserName,
-  setDisplayMainPage
+  setDisplayMainPage,
+  setDisplayUserName
 ) {
   return (
     <div className="App-Main-setUserName">
@@ -47,33 +53,29 @@ function displaySetUserNameComponent(
         type="button"
         name="UNKNOWN"
         value="UNKNOWN2"
-        onClick={(e) => {
-          setDisplaySetUserName(false);
-          setDisplayMainPage(true);
-          setUserName(
-            document.getElementById("App-Main-setUserName-inputText").value
-          );
+        onClick={e => {
+          setDisplaySetUserName(false)
+          setDisplayMainPage(true)
+          setDisplayUserName(true)
+          setUserName(document.getElementById("App-Main-setUserName-inputText").value)
         }}
       >
         Find out about Berkan!
       </button>
     </div>
-  );
+  )
 }
 
-function displayUserNameComponent(getUserName) {
+function displayUserNameComponent(getUserName, setDisplayUserName, setDisplayContent) {
   return (
     <div className="App-Main-displayUserName">
       {getUserName.length > 0 && typeItUserName(getUserName)}
       {getUserName.length > 0 && (
-        <img
-          src={handWave}
-          className="App-Main-displayUserName-handWave"
-          alt="Hand wave"
-        ></img>
+        <img src={handWave} className="App-Main-displayUserName-handWave" alt="Hand wave"></img>
       )}
+      {proceedToContent(setDisplayUserName, setDisplayContent)}
     </div>
-  );
+  )
 }
 
 function typeItUserName(getUserName) {
@@ -81,20 +83,25 @@ function typeItUserName(getUserName) {
     <div className="App-Main-displayUserName-text">
       <TypeIt
         options={{ waitUntilVisible: true }}
-        getBeforeInit={(instance) => {
+        getBeforeInit={instance => {
           instance
             .type("Welcome, ")
             .pause(750)
             .delete(9)
             .pause(500)
-            .type(
-              `Hi, <span id="App-Main-displayUserName-text-UserName">${getUserName}</span>!`
-            );
-          return instance;
+            .type(`Hi, <span id="App-Main-displayUserName-text-UserName">${getUserName}</span>!`)
+          return instance
         }}
       ></TypeIt>
     </div>
-  );
+  )
 }
 
-export default Main;
+function proceedToContent(setDisplayUserName, setDisplayContent) {
+  setTimeout(() => {
+    setDisplayUserName(false)
+    setDisplayContent(true)
+  }, 6000)
+}
+
+export default Main
