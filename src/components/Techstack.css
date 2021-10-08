@@ -13,7 +13,7 @@
 
 .slider-track {
   display: flex;
-  align-content: center;
+  align-items: center;
   animation: scroll 50s linear infinite;
 }
 
