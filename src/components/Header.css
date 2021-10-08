@@ -1,103 +1,48 @@
-#App-main-user-inputText {
-  padding: 5px 10px;
-  margin: 5px 0px;
-  border: 2px solid white;
-  border-radius: 20px;
-  background-color: white;
-  color: black;
-  outline: none; /*removes the blue outline around input when it gets focussed on */
-  text-align: center;
-  cursor: pointer;
-}
+/* === Multiple === */
 
-#App-main-user-inputText:focus {
-  border-color: rgb(97, 171, 221);
-  font-weight: 600;
-}
-
-#App-main-user-button {
-  padding: 5px 10px;
-  margin: 5px 0px;
-  border: 2px solid white;
-  border-radius: 20px;
-  background-color: white;
-  color: black;
-  text-align: center;
-  cursor: pointer;
-  font-weight: 600;
-  transition-duration: 0.5s;
-}
-
-#App-main-user-button:hover {
-  background-color: rgb(97, 171, 221);
-  border-color: rgb(97, 171, 221);
-}
-
-p {
-  color: white;
-}
-
-.App-header-inner-right-inner-text-display {
-  color: rgb(97, 171, 221);
-}
-
-.App-header-inner-left-logo,
-.App-header-inner-right-inner-handWave,
-.App-header-inner-right-icon {
+.App-Header-inner-left-logo,
+.App-Header-inner-right-icon {
   height: 8vh;
   max-height: 66px;
-  /* background-color: #ffffff; */
 }
 
-.App-header-inner-right-icon {
-  margin: 0px 5px;
-}
+/* === App-Header === */
 
-.App-header-inner-right-inner-handWave {
-  animation: App-header-inner-right-inner-handWave-movement infinite 5s linear
-    0.1s;
-  margin: 0px 5px;
-}
-
-#App-header-inner-right-inner-userName {
-  color: rgb(97, 171, 221);
-}
-
-.App-header {
+.App-Header {
   flex: none;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.App-header-inner {
+.App-Header-inner {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.App-header-inner-right-inner {
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* === App-Header-AppHeaderInnerLeft() === */
+/* Multiple -> .App-Header-inner-left-logo */
+
+/* App-Header-AppHeaderInnerRight() */
+
+.App-Header-inner-right {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.App-header-inner-right-inner-text {
-  margin-right: 10px;
-  color: white;
-}
+/* === App-Header-AppHeaderInnerRight()-displayIcons() === */
 
-.App-header-inner-left {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; */
-}
-
-.App-header-inner-right {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; */
+/* Multiple -> .App-Header-inner-right-icon */
+.App-Header-inner-right-icon {
+  margin: 0px 5px;
 }

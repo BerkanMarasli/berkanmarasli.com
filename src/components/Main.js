@@ -10,7 +10,7 @@ function Main(props) {
   const [displaySetUserName, setDisplaySetUserName] = useState(true);
 
   return (
-    <main className="App-main container">
+    <main className="App-Main container">
       {displaySetUserName
         ? displaySetUserNameComponent(
             setUserName,
@@ -29,10 +29,10 @@ function displaySetUserNameComponent(
   setDisplayMainPage
 ) {
   return (
-    <div className="App-main-setUserName">
-      <img src={logo} id="App-main-setUserName-logo" alt="BM-Logo" />
+    <div className="App-Main-setUserName">
+      <img src={logo} id="App-Main-setUserName-logo" alt="BM-Logo" />
       <input
-        id="App-main-user-inputText"
+        id="App-Main-setUserName-inputText"
         type="text"
         name="userName"
         size="25"
@@ -41,14 +41,16 @@ function displaySetUserNameComponent(
         autoFocus={true}
       ></input>
       <button
-        id="App-main-user-button"
+        id="App-Main-setUserName-button"
         type="button"
         name="UNKNOWN"
         value="UNKNOWN2"
         onClick={(e) => {
           setDisplaySetUserName(false);
           setDisplayMainPage(true);
-          setUserName(document.getElementById("App-main-user-inputText").value);
+          setUserName(
+            document.getElementById("App-Main-setUserName-inputText").value
+          );
         }}
       >
         Find out about Berkan!
@@ -59,12 +61,12 @@ function displaySetUserNameComponent(
 
 function displayUserNameComponent(getUserName) {
   return (
-    <div>
+    <div className="App-Main-displayUserName">
       {getUserName.length > 0 && typeItUserName(getUserName)}
       {getUserName.length > 0 && (
         <img
           src={handWave}
-          className="App-header-inner-right-inner-handWave"
+          className="App-Main-displayUserName-handWave"
           alt="Hand wave"
         ></img>
       )}
@@ -74,7 +76,7 @@ function displayUserNameComponent(getUserName) {
 
 function typeItUserName(getUserName) {
   return (
-    <div className="App-header-inner-right-inner-text">
+    <div className="App-Main-displayUserName-text">
       <TypeIt
         options={{ waitUntilVisible: true }}
         getBeforeInit={(instance) => {
@@ -84,7 +86,7 @@ function typeItUserName(getUserName) {
             .delete(9)
             .pause(500)
             .type(
-              `Hi, <span id="App-header-inner-right-inner-userName">${getUserName}</span>!`
+              `Hi, <span id="App-Main-displayUserName-text-UserName">${getUserName}</span>!`
             );
           return instance;
         }}

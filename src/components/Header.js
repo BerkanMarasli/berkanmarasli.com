@@ -8,9 +8,9 @@ function Header(props) {
   const { displayMainPage } = props.functions;
 
   return (
-    <header className="App-header">
+    <header className="App-Header">
       {displayMainPage ? (
-        <div className="App-header-inner container">
+        <div className="App-Header-inner container">
           {AppHeaderInnerLeft()}
           {AppHeaderInnerRight()}
         </div>
@@ -21,20 +21,16 @@ function Header(props) {
 
 function AppHeaderInnerLeft() {
   return (
-    <div className="App-header-inner-left">
+    <div>
       <a href="/" target="_self">
-        <img src={logo} className="App-header-inner-left-logo" alt="BM-Logo" />
+        <img src={logo} className="App-Header-inner-left-logo" alt="BM-Logo" />
       </a>
     </div>
   );
 }
 
 function AppHeaderInnerRight() {
-  return (
-    <div className="App-header-inner-right">
-      <div className="App-header-inner-right-inner">{displayIcons()}</div>
-    </div>
-  );
+  return <div className="App-Header-inner-right">{displayIcons()}</div>;
 }
 
 function displayIcons() {
@@ -44,21 +40,21 @@ function displayIcons() {
         <img
           src={linkedin}
           alt="LinkedIn Icon"
-          className="App-header-inner-right-icon"
+          className="App-Header-inner-right-icon"
         ></img>
       </a>
       <a href="https://github.com/BerkanMarasli">
         <img
           src={github}
           alt="Github Icon"
-          className="App-header-inner-right-icon"
+          className="App-Header-inner-right-icon"
         ></img>
       </a>
       <a href="/">
         <img
           src={email}
           alt="Email Icon"
-          className="App-header-inner-right-icon"
+          className="App-Header-inner-right-icon"
         ></img>
       </a>
     </div>
