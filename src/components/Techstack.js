@@ -58,31 +58,31 @@ const TechstackLogoNames = [
 ];
 
 function Techstack(props) {
-  return <div className="slider">{getTechstackLogos()}</div>;
+  return <div className="App-Main-Content-Techstack-slider">{getTechstackLogos()}</div>
 }
 
 function getTechstackLogos() {
   return (
-    <div className="slider-track">
-      {TechstackLogoLinks.map((Tech) => {
+    <div className="App-Main-Content-Techstack-slider-track">
+      {TechstackLogoLinks.map(Tech => {
         return (
           <TechstackLogo
             LogoLink={Tech}
             LogoName={TechstackLogoNames[TechstackLogoLinks.indexOf(Tech)]}
           />
-        );
+        )
       })}
       {/* Repeated for animation */}
-      {TechstackLogoLinks.map((Tech) => {
+      {TechstackLogoLinks.map(Tech => {
         return (
           <TechstackLogo
             LogoLink={Tech}
             LogoName={TechstackLogoNames[TechstackLogoLinks.indexOf(Tech)]}
           />
-        );
+        )
       })}
     </div>
-  );
+  )
 }
 
 export default Techstack;
