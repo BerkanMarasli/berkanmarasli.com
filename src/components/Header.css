@@ -42,15 +42,25 @@ p {
 }
 
 .App-header-inner-left-logo,
-.App-header-inner-right-inner-handWave {
+.App-header-inner-right-inner-handWave,
+.App-header-inner-right-icon {
   height: 8vh;
   max-height: 66px;
   /* background-color: #ffffff; */
 }
 
+.App-header-inner-right-icon {
+  margin: 0px 5px;
+}
+
 .App-header-inner-right-inner-handWave {
   animation: App-header-inner-right-inner-handWave-movement infinite 5s linear
     0.1s;
+  margin: 0px 5px;
+}
+
+#App-header-inner-right-inner-userName {
+  color: royalblue;
 }
 
 .App-header {
