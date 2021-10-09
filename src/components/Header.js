@@ -1,11 +1,11 @@
-import "./Header.css";
-import logo from "../images/BM-logo.png";
-import linkedin from "../icons/linkedin.png";
-import github from "../icons/github.png";
-import email from "../icons/email.png";
+import "./Header.css"
+import logo from "../images/BM-logo.png"
+import linkedin from "../icons/linkedin.png"
+import github from "../icons/github.png"
+import email from "../icons/email.png"
 
 function Header(props) {
-  const { displayMainPage } = props.functions;
+  const { displayMainPage } = props.functions
 
   return (
     <header className="App-Header">
@@ -16,7 +16,7 @@ function Header(props) {
         </div>
       ) : null}
     </header>
-  );
+  )
 }
 
 function AppHeaderInnerLeft() {
@@ -26,39 +26,27 @@ function AppHeaderInnerLeft() {
         <img src={logo} className="App-Header-inner-left-logo" alt="BM-Logo" />
       </a>
     </div>
-  );
+  )
 }
 
 function AppHeaderInnerRight() {
-  return <div className="App-Header-inner-right">{displayIcons()}</div>;
+  return <div className="App-Header-inner-right">{displayIcons()}</div>
 }
 
 function displayIcons() {
   return (
     <div>
       <a href="https://www.linkedin.com/in/berkan-m-3777a9ba/">
-        <img
-          src={linkedin}
-          alt="LinkedIn Icon"
-          className="App-Header-inner-right-icon"
-        ></img>
+        <img src={linkedin} alt="LinkedIn Icon" className="App-Header-inner-right-icon"></img>
       </a>
       <a href="https://github.com/BerkanMarasli">
-        <img
-          src={github}
-          alt="Github Icon"
-          className="App-Header-inner-right-icon"
-        ></img>
+        <img src={github} alt="Github Icon" className="App-Header-inner-right-icon"></img>
       </a>
-      <a href="/">
-        <img
-          src={email}
-          alt="Email Icon"
-          className="App-Header-inner-right-icon"
-        ></img>
+      <a href="mailto:berkan.marasli@hotmail.com">
+        <img src={email} alt="Email Icon" className="App-Header-inner-right-icon"></img>
       </a>
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header
