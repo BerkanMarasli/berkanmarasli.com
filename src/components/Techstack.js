@@ -21,6 +21,8 @@ const numpyLogoLink =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original-wordmark.svg"
 const matlabLogoLink =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg"
+const arduinoLogoLink =
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg"
 const gitLogoLink = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg"
 const githubLogoLink =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
@@ -44,6 +46,7 @@ const TechstackLogoLinks = [
   pandasLogoLink,
   numpyLogoLink,
   matlabLogoLink,
+  arduinoLogoLink,
   gitLogoLink,
   githubLogoLink,
   markdownLogoLink,
@@ -63,6 +66,7 @@ const TechstackLogoNames = [
   "Pandas",
   "Numpy",
   "Matlab",
+  "Arduino",
   "Git",
   "Github",
   "Markdown",
