@@ -42,7 +42,7 @@
 }
 
 #App-Main-setUserName-inputText:focus {
-  border-color: rgb(97, 171, 221);
+  border-color: rgb(0, 120, 212);
   font-weight: 600;
 }
 
@@ -62,8 +62,8 @@
 }
 
 #App-Main-setUserName-button:hover {
-  background-color: rgb(97, 171, 221);
-  border-color: rgb(97, 171, 221);
+  background-color: rgb(0, 120, 212);
+  border-color: rgb(0, 120, 212);
 }
 
 /* App-Main-displayUserNameComponent() */
@@ -105,5 +105,5 @@
 }
 
 #App-Main-displayUserName-text-UserName {
-  color: rgb(97, 171, 221);
+  color: rgb(0, 120, 212);
 }
