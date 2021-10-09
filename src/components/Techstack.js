@@ -24,6 +24,14 @@ const matlabLogoLink =
 const gitLogoLink = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg"
 const githubLogoLink =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+const markdownLogoLink =
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg"
+const slackLogoLink =
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original-wordmark.svg"
+const vscodeLogoLink =
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg"
+const yarnLogoLink =
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original-wordmark.svg"
 
 const TechstackLogoLinks = [
   javascriptLogoLink,
@@ -38,6 +46,10 @@ const TechstackLogoLinks = [
   matlabLogoLink,
   gitLogoLink,
   githubLogoLink,
+  markdownLogoLink,
+  slackLogoLink,
+  vscodeLogoLink,
+  yarnLogoLink,
 ]
 
 const TechstackLogoNames = [
@@ -53,6 +65,10 @@ const TechstackLogoNames = [
   "Matlab",
   "Git",
   "Github",
+  "Markdown",
+  "Slack",
+  "VSCode",
+  "Yarn",
 ]
 
 function Techstack(props) {

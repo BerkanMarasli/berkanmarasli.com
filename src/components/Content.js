@@ -1,8 +1,13 @@
-import "./Content.css";
-import Techstack from "./Techstack";
+import "./Content.css"
+import Techstack from "./Techstack"
 
 function Content(props) {
-  return <Techstack />;
+  return (
+    <main>
+      <h2>My Tech Stack</h2>
+      <Techstack />
+    </main>
+  )
 }
 
-export default Content;
+export default Content
