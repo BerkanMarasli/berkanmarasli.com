@@ -1,0 +1,30 @@
+.App-Footer {
+  flex: none;
+  margin-top: 1.5rem;
+  box-sizing: border-box;
+  background-color: rgb(0, 119, 183);
+}
+
+.App-Footer-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  /* width: 90%; */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.App-Footer-inner-textLinks {
+  color: white;
+}
+
+.App-Footer-inner-icon {
+  height: 6vh;
+  max-height: 66px;
+  margin: 0px 5px;
+}

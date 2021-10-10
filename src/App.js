@@ -2,6 +2,7 @@ import "./App.css"
 import { useState } from "react"
 import Header from "./components/Header"
 import Main from "./components/Main"
+import Footer from "./components/Footer"
 
 function App() {
   const [displayMainPage, setDisplayMainPage] = useState(false)
@@ -18,7 +19,7 @@ function App() {
           setDisplayMainPage: setDisplayMainPage,
         }}
       />
-      {/* <footer></footer> */}
+      <Footer functions={{ displayMainPage: displayMainPage }} />
     </div>
   )
 }

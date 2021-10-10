@@ -17,6 +17,9 @@ function Content(props) {
       <br />
       <br />
       {displayJourney()}
+      <br />
+      <br />
+      <br />
     </div>
   )
 }
