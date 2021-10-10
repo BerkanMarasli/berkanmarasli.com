@@ -3,6 +3,8 @@
   margin-top: 1.5rem;
   box-sizing: border-box;
   background-color: rgb(0, 119, 183);
+  /* used to pin footer to the bottom */
+  flex-shrink: 0;
 }
 
 .App-Footer-inner {
