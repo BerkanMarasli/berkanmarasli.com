@@ -6,6 +6,7 @@ import uowLogo from "../images/uow-logo.png"
 import cfbsLogo from "../images/cfbs-logo.png"
 
 function Content(props) {
+  setCookie(props.data.getUserName)
   return (
     <div>
       <img id="App-Main-Content-mainPicture" src={bmkilipicture} alt="BM Kilimanjaro" />
@@ -22,6 +23,11 @@ function Content(props) {
       <br />
     </div>
   )
+}
+
+function setCookie(getUserName) {
+  const oneDayInSeconds = 60 // 60 * 60 * 24
+  document.cookie = `BMSiteUserName=${getUserName}; max-age=${oneDayInSeconds}`
 }
 
 function displayTechstack() {
