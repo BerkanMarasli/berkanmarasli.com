@@ -1,26 +1,26 @@
 #App-Main-Content-mainPicture {
-    height: 300px;
-    border-radius: 15%;
+  height: 300px;
+  border-radius: 15%;
 }
 
 .App-Main-Content-myJourney-exp {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .App-Main-Content-myJourney-expHeader {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .App-Main-Content-myJourney-expSummary {
-    width: inherit;
-    word-wrap: break-word;
-    text-align: left;
+  width: inherit;
+  word-wrap: break-word;
+  text-align: left;
 }
 
 .App-Main-Content-myJourney-expHeader-expLogo {
@@ -30,16 +30,20 @@
   margin: 0px 5px;
 }
 
-.App-Main-Content-myJourney-expHeader-expDetails{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    text-align: left;
-    justify-content: center;
+.App-Main-Content-myJourney-expHeader-expDetails {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  text-align: left;
+  justify-content: center;
 }
 
-.App-Main-Content-myJourney-expHeader-expDetails-text{
-    height: 40px;
-    padding: 0px;
-    margin: 0px 10px;
+.App-Main-Content-myJourney-expHeader-expDetails-rowContainer {
+  display: flex;
+}
+
+.App-Main-Content-myJourney-expHeader-expDetails-text {
+  height: 40px;
+  padding: 0px;
+  margin: 0px 10px;
 }

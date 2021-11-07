@@ -4,6 +4,9 @@ import bmkilipicture from "../images/BM-Kili.png"
 import sigmaLabsXYZLogo from "../images/sigmaLabsXYZ-logo.png"
 import uowLogo from "../images/uow-logo.png"
 import cfbsLogo from "../images/cfbs-logo.png"
+import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined"
+import DateRangeOutlinedIcon from "@mui/icons-material/DateRangeOutlined"
+import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined"
 
 function Content(props) {
   setCookie(props.data.getUserName)
@@ -60,13 +63,22 @@ function displaySigmaLabs() {
           alt="Sigma Labs XYZ Logo"
         />
         <div className="App-Main-Content-myJourney-expHeader-expDetails">
-          <h3 className="App-Main-Content-myJourney-expHeader-expDetails-text">Sigma Labs XYZ</h3>
-          <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
-            August 2021 - Present
-          </p>
-          <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
-            Company description
-          </p>
+          <div className="App-Main-Content-myJourney-expHeader-expDetails-rowContainer">
+            <WorkOutlineOutlinedIcon sx={{ color: "rgb(0, 119, 183)", marginLeft: "10px" }} />
+            <h3 className="App-Main-Content-myJourney-expHeader-expDetails-text">Sigma Labs XYZ</h3>
+          </div>
+          <div className="App-Main-Content-myJourney-expHeader-expDetails-rowContainer">
+            <DateRangeOutlinedIcon sx={{ color: "rgb(0, 119, 183)", marginLeft: "10px" }} />
+            <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
+              August 2021 - Present
+            </p>
+          </div>
+          <div className="App-Main-Content-myJourney-expHeader-expDetails-rowContainer">
+            <DescriptionOutlinedIcon sx={{ color: "rgb(0, 119, 183)", marginLeft: "10px" }} />
+            <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
+              Company description
+            </p>
+          </div>
         </div>
       </div>
       <p className="App-Main-Content-myJourney-expSummary">
@@ -87,15 +99,24 @@ function displayUOW() {
           alt="University of Warwick Logo"
         />
         <div className="App-Main-Content-myJourney-expHeader-expDetails">
-          <h3 className="App-Main-Content-myJourney-expHeader-expDetails-text">
-            University of Warwick
-          </h3>
-          <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
-            October 2017 - July 2021
-          </p>
-          <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
-            Company description
-          </p>
+          <div className="App-Main-Content-myJourney-expHeader-expDetails-rowContainer">
+            <WorkOutlineOutlinedIcon sx={{ color: "rgb(0, 119, 183)", marginLeft: "10px" }} />
+            <h3 className="App-Main-Content-myJourney-expHeader-expDetails-text">
+              University of Warwick
+            </h3>
+          </div>
+          <div className="App-Main-Content-myJourney-expHeader-expDetails-rowContainer">
+            <DateRangeOutlinedIcon sx={{ color: "rgb(0, 119, 183)", marginLeft: "10px" }} />
+            <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
+              October 2017 - July 2021
+            </p>
+          </div>
+          <div className="App-Main-Content-myJourney-expHeader-expDetails-rowContainer">
+            <DescriptionOutlinedIcon sx={{ color: "rgb(0, 119, 183)", marginLeft: "10px" }} />
+            <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
+              Company description
+            </p>
+          </div>
         </div>
       </div>
       <p className="App-Main-Content-myJourney-expSummary">
@@ -116,15 +137,24 @@ function displayCFBS() {
           alt="Central Foundation Boys' School Logo"
         />
         <div className="App-Main-Content-myJourney-expHeader-expDetails">
-          <h3 className="App-Main-Content-myJourney-expHeader-expDetails-text">
-            Central Foundation Boys' School
-          </h3>
-          <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
-            September 2010 - July 2017
-          </p>
-          <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
-            Company description
-          </p>
+          <div className="App-Main-Content-myJourney-expHeader-expDetails-rowContainer">
+            <WorkOutlineOutlinedIcon sx={{ color: "rgb(0, 119, 183)", marginLeft: "10px" }} />
+            <h3 className="App-Main-Content-myJourney-expHeader-expDetails-text">
+              Central Foundation Boys' School
+            </h3>
+          </div>
+          <div className="App-Main-Content-myJourney-expHeader-expDetails-rowContainer">
+            <DateRangeOutlinedIcon sx={{ color: "rgb(0, 119, 183)", marginLeft: "10px" }} />
+            <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
+              September 2010 - July 2017
+            </p>
+          </div>
+          <div className="App-Main-Content-myJourney-expHeader-expDetails-rowContainer">
+            <DescriptionOutlinedIcon sx={{ color: "rgb(0, 119, 183)", marginLeft: "10px" }} />
+            <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
+              Company description
+            </p>
+          </div>
         </div>
       </div>
       <p className="App-Main-Content-myJourney-expSummary">
