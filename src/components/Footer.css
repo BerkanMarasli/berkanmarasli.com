@@ -21,6 +21,11 @@
   text-align: center;
 }
 
+.App-Footer-inner-marginSpacing {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .App-Footer-inner-textLinks {
   color: white;
 }

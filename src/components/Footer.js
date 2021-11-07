@@ -11,7 +11,7 @@ function Footer(props) {
 function displayFooter() {
   return (
     <div className="App-Footer-inner container">
-      <p>
+      <p className="App-Footer-inner-marginSpacing">
         This website is{" "}
         <a
           className="App-Footer-inner-textLinks"
@@ -28,7 +28,7 @@ function displayFooter() {
         </a>
         !
       </p>
-      <p>© 2021, Berkan Marasli</p>
+      <p className="App-Footer-inner-marginSpacing">© 2021, Berkan Marasli</p>
       {displayIcons()}
     </div>
   )
@@ -36,7 +36,7 @@ function displayFooter() {
 
 function displayIcons() {
   return (
-    <div>
+    <div className="App-Footer-inner-marginSpacing">
       <a href="https://www.linkedin.com/in/berkanmarasli">
         <img src={linkedin} alt="LinkedIn Icon" className="App-Footer-inner-icon"></img>
       </a>
