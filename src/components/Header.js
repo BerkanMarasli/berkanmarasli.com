@@ -36,7 +36,7 @@ function AppHeaderInnerRight() {
 function displayIcons() {
   return (
     <div>
-      <a href="https://www.linkedin.com/in/berkan-m-3777a9ba/">
+      <a href="https://www.linkedin.com/in/berkanmarasli">
         <img src={linkedin} alt="LinkedIn Icon" className="App-Header-inner-right-icon"></img>
       </a>
       <a href="https://github.com/BerkanMarasli">
