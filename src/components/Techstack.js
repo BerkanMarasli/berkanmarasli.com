@@ -12,9 +12,18 @@ const css3LogoLink =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
 const reactLogoLink =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+const nodeLogoLink = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
 const denoLogoLink =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/denojs/denojs-original-wordmark.svg"
+const expressLogoLink =
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
 const jestLogoLink = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
+const postgresqlLogoLink =
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg"
+const materialuiLogoLink =
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-plain.svg"
+const bootstrapLogoLink =
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
 const pandasLogoLink =
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original-wordmark.svg"
 const numpyLogoLink =
@@ -41,8 +50,13 @@ const TechstackLogoLinks = [
   html5LogoLink,
   css3LogoLink,
   reactLogoLink,
+  nodeLogoLink,
   denoLogoLink,
+  expressLogoLink,
   jestLogoLink,
+  postgresqlLogoLink,
+  materialuiLogoLink,
+  bootstrapLogoLink,
   pandasLogoLink,
   numpyLogoLink,
   matlabLogoLink,
@@ -61,8 +75,13 @@ const TechstackLogoNames = [
   "HTML5",
   "CSS3",
   "React",
+  "NodeJS",
   "Deno",
+  "Express",
   "Jest",
+  "PostgreSQL",
+  "MaterialUI",
+  "Bootstrap",
   "Pandas",
   "Numpy",
   "Matlab",

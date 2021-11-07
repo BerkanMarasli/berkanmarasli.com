@@ -21,7 +21,7 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(calc(-160px * 17));
+    transform: translateX(calc(-160px * 22));
   }
 }
 
