@@ -76,7 +76,8 @@ function displaySigmaLabs() {
           <div className="App-Main-Content-myJourney-expHeader-expDetails-rowContainer">
             <DescriptionOutlinedIcon sx={{ color: "rgb(0, 119, 183)", marginLeft: "10px" }} />
             <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
-              Company description
+              Sigma Labs develops high performance software and data engineers by providing
+              exceptional training
             </p>
           </div>
         </div>
@@ -114,7 +115,8 @@ function displayUOW() {
           <div className="App-Main-Content-myJourney-expHeader-expDetails-rowContainer">
             <DescriptionOutlinedIcon sx={{ color: "rgb(0, 119, 183)", marginLeft: "10px" }} />
             <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
-              Company description
+              The University of Warwick is a public research university on the outskirts of
+              Coventry, England
             </p>
           </div>
         </div>
@@ -152,7 +154,8 @@ function displayCFBS() {
           <div className="App-Main-Content-myJourney-expHeader-expDetails-rowContainer">
             <DescriptionOutlinedIcon sx={{ color: "rgb(0, 119, 183)", marginLeft: "10px" }} />
             <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
-              Company description
+              Central Foundation Boys' School is a voluntary-aided comprehensive school in the
+              London Borough of Islington
             </p>
           </div>
         </div>
