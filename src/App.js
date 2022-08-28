@@ -1,8 +1,8 @@
 import "./App.css"
 import { useState } from "react"
-import Header from "./components/Header"
+import Header from "./components/header/Header"
 import Main from "./components/Main"
-import Footer from "./components/Footer"
+import Footer from "./components/footer/Footer"
 
 function App() {
   const [displayMainPage, setDisplayMainPage] = useState(false)

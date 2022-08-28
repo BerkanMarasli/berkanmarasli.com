@@ -1,8 +1,10 @@
 import "./Header.css"
-import logo from "../images/BM-logo.png"
-import linkedin from "../icons/linkedin.png"
-import github from "../icons/github.png"
-import email from "../icons/email.png"
+import logo from "../../images/BM-logo.png"
+// import linkedin from "../../icons/linkedin.png"
+// import github from "../../icons/github.png"
+// import email from "../../icons/email.png"
+import { ICON } from "../../icons"
+import { EXTERNAL_LINKS } from "../../constants"
 
 function Header(props) {
   const { displayMainPage } = props.functions
@@ -36,14 +38,14 @@ function AppHeaderInnerRight() {
 function displayIcons() {
   return (
     <div>
-      <a href="https://www.linkedin.com/in/berkanmarasli">
-        <img src={linkedin} alt="LinkedIn Icon" className="App-Header-inner-right-icon"></img>
+      <a href={EXTERNAL_LINKS.linkedinProfile}>
+        <img src={ICON.linkedin} alt="LinkedIn Icon" className="App-Header-inner-right-icon"></img>
       </a>
-      <a href="https://github.com/BerkanMarasli">
-        <img src={github} alt="Github Icon" className="App-Header-inner-right-icon"></img>
+      <a href={EXTERNAL_LINKS.githubProfile}>
+        <img src={ICON.github} alt="Github Icon" className="App-Header-inner-right-icon"></img>
       </a>
-      <a href="mailto:berkan.marasli@hotmail.com">
-        <img src={email} alt="Email Icon" className="App-Header-inner-right-icon"></img>
+      <a href={`mailto:${EXTERNAL_LINKS.emailAddress}`}>
+        <img src={ICON.email} alt="Email Icon" className="App-Header-inner-right-icon"></img>
       </a>
     </div>
   )

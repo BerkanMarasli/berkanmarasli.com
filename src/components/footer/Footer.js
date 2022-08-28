@@ -1,7 +1,7 @@
 import "./Footer.css"
-import linkedin from "../icons/linkedin.png"
-import github from "../icons/github.png"
-import email from "../icons/email.png"
+import linkedin from "../../icons/linkedin.png"
+import github from "../../icons/github.png"
+import email from "../../icons/email.png"
 
 function Footer(props) {
   const { displayMainPage } = props.functions

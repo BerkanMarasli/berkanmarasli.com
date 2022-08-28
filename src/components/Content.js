@@ -1,5 +1,5 @@
 import "./Content.css"
-import Techstack from "./Techstack"
+import Techstack from "./tech-stack/Techstack"
 import bmkilipicture from "../images/BM-Kili.png"
 import sigmaLabsXYZLogo from "../images/sigmaLabsXYZ-logo.png"
 import uowLogo from "../images/uow-logo.png"
