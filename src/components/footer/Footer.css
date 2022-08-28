@@ -1,4 +1,4 @@
-.App-Footer {
+.Footer {
   flex: none;
   margin-top: 1.5rem;
   box-sizing: border-box;
@@ -7,19 +7,21 @@
   flex-shrink: 0;
 }
 
-.App-Footer-inner {
+.Footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.container {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-.App-Footer-inner-textLinks {
+.Footer-marginSpacing {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.Footer-textLinks {
   color: white;
 }
