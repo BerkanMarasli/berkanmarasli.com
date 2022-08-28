@@ -26,7 +26,7 @@ function displayFooter() {
         </a>
         !
       </p>
-      <p className="App-Footer-inner-marginSpacing">© 2021, Berkan Marasli</p>
+      <p className="App-Footer-inner-marginSpacing">© {new Date().getFullYear()}, Berkan Marasli</p>
       {FooterIcons()}
     </div>
   )
