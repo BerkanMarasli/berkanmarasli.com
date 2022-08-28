@@ -1,0 +1,10 @@
+.Footer-icons {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.Footer-icon {
+  height: 6vh;
+  max-height: 66px;
+  margin: 0px 5px;
+}

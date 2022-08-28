@@ -15,23 +15,11 @@
 }
 
 .container {
-  /* width: 90%; */
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-.App-Footer-inner-marginSpacing {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .App-Footer-inner-textLinks {
   color: white;
-}
-
-.App-Footer-inner-icon {
-  height: 6vh;
-  max-height: 66px;
-  margin: 0px 5px;
 }
