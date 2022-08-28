@@ -1,0 +1,14 @@
+.Tech-Stack-logo {
+  width: 100px;
+  height: 100px;
+  margin: 0px 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15%;
+}
+
+.Tech-Stack-logo:hover {
+  width: 90px;
+  height: 90px;
+  border: 5px solid rgb(0, 119, 183);
+}

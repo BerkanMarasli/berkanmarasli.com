@@ -76,7 +76,7 @@ function displaySigmaLabs() {
           <div className="App-Main-Content-myJourney-expHeader-expDetails-rowContainer">
             <DescriptionOutlinedIcon sx={{ color: "rgb(0, 119, 183)", marginLeft: "10px" }} />
             <p className="App-Main-Content-myJourney-expHeader-expDetails-text">
-              Sigma Labs develops high performance software and data engineers by providing
+              Sigma Labs develop high performance software and data engineers by providing
               exceptional training
             </p>
           </div>

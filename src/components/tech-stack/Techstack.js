@@ -1,5 +1,5 @@
 import "./Techstack.css"
-import TechstackLogo from "./TechstackLogo"
+import TechStackLogo from "./tech-stack-logo/TechStackLogo"
 
 // https://devicon.dev/
 const javascriptLogoLink =
@@ -103,7 +103,7 @@ function getTechstackLogos() {
     <div className="App-Main-Content-Techstack-slider-track">
       {TechstackLogoLinks.map(Tech => {
         return (
-          <TechstackLogo
+          <TechStackLogo
             LogoLink={Tech}
             LogoName={TechstackLogoNames[TechstackLogoLinks.indexOf(Tech)]}
           />
@@ -112,7 +112,7 @@ function getTechstackLogos() {
       {/* Repeated for animation */}
       {TechstackLogoLinks.map(Tech => {
         return (
-          <TechstackLogo
+          <TechStackLogo
             LogoLink={Tech}
             LogoName={TechstackLogoNames[TechstackLogoLinks.indexOf(Tech)]}
           />
