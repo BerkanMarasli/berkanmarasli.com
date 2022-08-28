@@ -1,6 +1,6 @@
 import "./FooterIcons.css"
-import { ICON } from "../../../icons"
 import { EXTERNAL_LINKS } from "../../../constants"
+import { ICON } from "../../../icons"
 
 export function FooterIcons() {
   return (

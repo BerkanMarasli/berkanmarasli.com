@@ -1,18 +1,14 @@
-/* App-Main-Content-Techstack */
-
-.App-Main-Content-Techstack-slider {
+.Tech-Stack-slider {
   overflow: hidden;
   width: 100vw;
 }
 
-/* App-Main-Content-Techstack-getTechstackLogos() */
-
-.App-Main-Content-Techstack-slider-track {
+.Tech-Stack-slider-track {
   display: flex;
   animation: autoScroll 50s linear infinite;
 }
 
-.App-Main-Content-Techstack-slider-track:hover {
+.Tech-Stack-slider-track:hover {
   animation-play-state: paused;
 }
 

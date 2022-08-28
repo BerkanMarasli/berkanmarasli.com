@@ -1,5 +1,5 @@
 import "./Content.css"
-import Techstack from "./tech-stack/Techstack"
+import TechStack from "./tech-stack/TechStack"
 import bmkilipicture from "../images/BM-Kili.png"
 import sigmaLabsXYZLogo from "../images/sigmaLabsXYZ-logo.png"
 import uowLogo from "../images/uow-logo.png"
@@ -37,7 +37,7 @@ function displayTechstack() {
   return (
     <section>
       <h2>My Tech Stack</h2>
-      <Techstack />
+      <TechStack />
     </section>
   )
 }

@@ -1,6 +1,6 @@
 import "./Footer.css"
-import { FooterIcons } from "./footer-icons/FooterIcons"
 import { EXTERNAL_LINKS } from "../../constants"
+import { FooterIcons } from "./footer-icons/FooterIcons"
 
 export default function Footer(props) {
   // TODO 'functions' does not make sense here
