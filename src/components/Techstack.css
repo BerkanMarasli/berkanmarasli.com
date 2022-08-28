@@ -37,5 +37,7 @@
 }
 
 .App-Main-Content-Techstack-logo:hover {
+  width: 90px;
+  height: 90px;
   border: 5px solid rgb(0, 119, 183);
 }
