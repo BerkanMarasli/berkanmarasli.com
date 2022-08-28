@@ -23,7 +23,7 @@ function displayFooter() {
         !
       </p>
       <p className="Footer-marginSpacing">© {new Date().getFullYear()}, Berkan Marasli</p>
-      {FooterIcons()}
+      <FooterIcons />
     </div>
   )
 }
