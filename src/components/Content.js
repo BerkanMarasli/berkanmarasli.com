@@ -8,7 +8,7 @@ import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined"
 import DateRangeOutlinedIcon from "@mui/icons-material/DateRangeOutlined"
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined"
 
-function Content(props) {
+export default function Content(props) {
   setCookie(props.data.getUserName)
   return (
     <div>
@@ -167,5 +167,3 @@ function displayCFBS() {
     </div>
   )
 }
-
-export default Content
